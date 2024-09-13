@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\AddProductWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AuthorsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\BookReader.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CategoriesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ChooseAdminWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ClientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Custom\CustomTextBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\OrdersAdminWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\OrdersClientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ProductDetailsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ProductEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PublishersWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Custom\Rating.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\RegisterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserBooksWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\AddProductWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AuthorsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\BookReader.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CategoriesWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ChooseAdminWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ClientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\BookWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Custom\CustomTextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\OrdersAdminWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\OrdersClientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ProductDetailsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ProductEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PublishersWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Custom\Rating.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RegisterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserBooksWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

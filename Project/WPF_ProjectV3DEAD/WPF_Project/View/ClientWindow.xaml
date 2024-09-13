@@ -1,0 +1,116 @@
+﻿<Window x:Class="WPF_Project.ClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Project"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="ClientWindow" Height="720" Width="1300"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        xmlns:uiw="http://schemas.lepo.co/wpfui/2022/xaml"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid Margin="10 0 10 0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="330"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" HorizontalAlignment="Left" BorderThickness="0" Click="btnBackToLoginWindow_Click">
+            <Grid Margin="10,10,10,10">
+                <ContentControl Width="20" Height="20">
+                    <materialDesign:PackIcon Kind="ArrowBack" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                </ContentControl>
+            </Grid>
+        </Button>
+
+        <Button BorderThickness="0" Click="btnUserOrdersWindow_Click" Margin="67,0,0,0">
+            <Grid Margin="10,10,10,10">
+                <ContentControl Width="20" Height="20">
+                    <materialDesign:PackIcon Kind="Cart" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                </ContentControl>
+            </Grid>
+        </Button>
+        <Button BorderThickness="0" Click="btnUserInfoWindow_Click" Margin="134,0,0,0">
+            <Grid Margin="10,10,10,10">
+                <ContentControl Width="20" Height="20">
+                    <materialDesign:PackIcon Kind="Account" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                </ContentControl>
+            </Grid>
+        </Button>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Здравствуйте " Grid.Column="0" FontWeight="Bold" FontSize="20"/>
+            <TextBlock Text="UserEmail"  x:Name="UserEmail" Grid.Column="1" FontWeight="Bold" FontSize="20"/>
+        </Grid>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="10">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="300 0 0 0">
+            <TextBox x:Name="searchBox" Width="300" />
+            <Button x:Name="SearchButton" Width="25" Height="25" Click="SearchButton_Click" BorderThickness="0" Grid.Column="1" Grid.Row="1" Background="White" Margin="10 0 0 0" Style="{Binding}">
+                <Grid>
+                    <ContentControl Width="25" Height="25">
+                        <materialDesign:PackIcon Kind="Search" VerticalAlignment="Center" HorizontalAlignment="Center" Width="30" Height="30"/>
+                    </ContentControl>
+                </Grid>
+            </Button>
+                </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                    <uiw:Button x:Name="SortTitleButton"  Margin="10 10 0 10" Click="SortButtonTitle_Click" Content="Название" FontSize="16" Icon="ArrowSortDown16"/>
+                    <uiw:Button x:Name="SortPriceButton"  Margin="10 10 0 10" Click="SortButtonPrice_Click" Content="Цена" FontSize="16" Icon="ArrowSortDown16"/>
+            </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <Button HorizontalAlignment="Right" BorderThickness="0" Click="btnRefreshUserBookGrid_Click">
+                <Grid Margin="1">
+                    <ContentControl Width="20" Height="20">
+                        <materialDesign:PackIcon Kind="Reload" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </ContentControl>
+                </Grid>
+            </Button>
+            <DataGrid ItemsSource="{Binding UserBooksViewModel.Books}" AutoGenerateColumns="False" CanUserAddRows="False" BorderBrush="White" >
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Книга" Binding="{Binding BookName}" Width="*" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Статус книги" Binding="{Binding Status}" Width="*" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        
+        <ListBox BorderThickness="0" x:Name="productsList" Background="{DynamicResource WindowBackground}" ItemsSource="{Binding BooksViewModel.Books}" SelectionMode="Single" d:ItemsSource="{d:SampleData ItemCount=10}" Grid.Row="2" Grid.Column="1" MouseDoubleClick="productsList_MouseDoubleClick_1" >
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="4" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate >
+                <DataTemplate>
+                    
+                        <ui:ThemeShadowChrome Depth="20"
+                                              IsShadowEnabled="True"
+                                               
+                                               >
+                            <StackPanel Width="200" Background="White">
+                                <Image Source="{Binding CoverImage}" Height="200" Width="185" Margin="5"/>
+                                <TextBlock Text="{Binding Title}" Foreground="Black" FontWeight="Bold" FontSize="16" Margin="5"/>
+                                <TextBlock Text="{Binding YearPublished, StringFormat='{}Year published: {0:yyyy}'}" Foreground="Black" Margin="5"/>
+                                <TextBlock Text="{Binding Price, StringFormat='{}{0:C}'}" Foreground="Black" Margin="5"/>
+                                <TextBlock Text="{Binding Description}" Foreground="Black" Margin="5"/>
+                            </StackPanel>
+                        </ui:ThemeShadowChrome>
+                   
+
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

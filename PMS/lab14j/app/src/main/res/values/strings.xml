@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">lab14j</string>
+    <string name="start_tracking">Начать отслеживание</string>
+    <string name="location_settings_dialog_toast">Пожалуйста, включите службы местоположения</string>
+    <string name="location_settings_dialog_positive_button">Включить</string>
+    <string name="location_settings_dialog_negative_button">Отмена</string>
+    <string name="location_settings_dialog_title">Настройки местоположения</string>
+    <string name="location_settings_dialog_message">Службы местоположения отключены. Пожалуйста, включите службы местоположения, чтобы продолжить.</string>
+    <string name="latitude">Широта: %1$.6f</string>
+    <string name="longitude">Долгота: %1$.6f</string>
+    <string name="address">Адрес: %1$s</string>
+    <string name="speed">Скорость: %1$.2f м/с</string>
+    <string name="time">Время: %1$s</string>
+    <string name="altitude">Высота: %1$.2f м</string>
+    <string name="marker_title">Маркер</string>
+    <string name="unknown_address">Неизвестный адрес</string>
+    <string name="my_api">AIzaSyDrbSDKgU6-ro_J6ycPvV7zMFpuLHxBU08</string>
+</resources>

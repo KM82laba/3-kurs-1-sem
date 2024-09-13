@@ -1,0 +1,6 @@
+C:\Education\3 kurs 1 sem\DB\DB_Laba10_CLR\Laba10CLR\bin\Debug\Laba10CLR.dacpac
+C:\Education\3 kurs 1 sem\DB\DB_Laba10_CLR\Laba10CLR\obj\Debug\Laba10CLR.sqlproj.AssemblyReference.cache
+C:\Education\3 kurs 1 sem\DB\DB_Laba10_CLR\Laba10CLR\obj\Debug\Laba10CLR.dll
+C:\Education\3 kurs 1 sem\DB\DB_Laba10_CLR\Laba10CLR\obj\Debug\Laba10CLR.pdb
+C:\Education\3 kurs 1 sem\DB\DB_Laba10_CLR\Laba10CLR\bin\Debug\Laba10CLR.dll
+C:\Education\3 kurs 1 sem\DB\DB_Laba10_CLR\Laba10CLR\bin\Debug\Laba10CLR.pdb

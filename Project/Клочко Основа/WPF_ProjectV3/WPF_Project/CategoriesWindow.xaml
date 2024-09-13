@@ -1,0 +1,52 @@
+﻿<Window x:Class="WPF_Project.CategoriesWindow"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Project"
+        mc:Ignorable="d"
+        Title="CategoriesWindow" Height="600" Width="450"
+        WindowStartupLocation="CenterScreen"
+        >
+    
+        <Grid>
+
+
+            <StackPanel>
+                <Button Grid.Column="0" Grid.ColumnSpan="1" HorizontalAlignment="Left" BorderThickness="0" Click="btnBackToChooseAdminWindow_Click">
+                    <Grid Margin="10,10,10,10">
+
+                        <ContentControl Width="20" Height="20">
+                            <materialDesign:PackIcon Kind="ArrowBack" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        </ContentControl>
+                    </Grid>
+                </Button>
+                <TextBlock Text="Новая категория" FontWeight="Bold" FontSize="16" Margin="0 0 0 10" HorizontalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 10" HorizontalAlignment="Center">
+                    <TextBlock Text="Имя катеория:" Margin="0 5 10 0"/>
+                    <TextBox x:Name="newCategoryNameTextBox" Width="150"/>
+                </StackPanel>
+            <Button Content="Добавить категорию" Click="AddCategoryButton_Click" Width="150" HorizontalAlignment="Center"/>
+
+                <TextBlock Text="Категории" FontWeight="Bold" FontSize="16" Margin="10 20 0 10"/>
+            <DataGrid x:Name="dataGrid" ItemsSource="{Binding Category}" Height="200" AutoGenerateColumns="False" Background="White" BorderBrush="White" Margin="0 0 10 0">
+                    <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding CategoryId}" Width="Auto" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Name" Binding="{Binding CategoryName}" Width="*" IsReadOnly="True"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <StackPanel Orientation="Horizontal" Margin="0 10 0 10" HorizontalAlignment="Center">
+                    <TextBlock Text="Изменить имя категории:" Margin="0 5 10 0"/>
+                    <TextBox x:Name="EditCategoryNameTextBox" Width="150" />
+                </StackPanel>
+            <Button Content="Изменить категорию" Click="EditCategoryButton_Click" Width="150" HorizontalAlignment="Center"/>
+            <Button Content="Удалить категорию" Click="DeleteCategoryButton_Click" Margin="0 10 0 0" Width="150" HorizontalAlignment="Center"/>
+
+
+
+            </StackPanel>
+
+        </Grid>
+    
+</Window>

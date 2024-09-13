@@ -1,0 +1,50 @@
+﻿<Window x:Class="WPF_Project.OrdersAdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Project"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="OrdersAdminWindow" Height="450" Width="1000"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Window.Resources>
+        <local:AdminIdConverter x:Key="adminIdConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Button HorizontalAlignment="Left" BorderThickness="0" Click="btnBackToChooseAdminWindow_Click">
+            <Grid Margin="10,10,10,10">
+                <ContentControl Width="20" Height="20">
+                    <materialDesign:PackIcon Kind="ArrowBack" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                </ContentControl>
+            </Grid>
+        </Button>
+        <DataGrid Grid.Row="1" x:Name="dataGrid" ItemsSource="{Binding Orders}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="OrderId" Binding="{Binding OrderId}" Width="Auto" IsReadOnly="True"/>
+                <DataGridTextColumn Header="UserId" Binding="{Binding UserId}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="UserAdress" Binding="{Binding UserAdress}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="UserFirstName" Binding="{Binding UserFirstName}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="UserLastName" Binding="{Binding UserLastName}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="UserPhoneNumber" Binding="{Binding UserPhoneNumber}" Width="*" IsReadOnly="True"/>
+
+                <DataGridTextColumn Header="OrderDate" Binding="{Binding OrderDate}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="DeliveryDate" Binding="{Binding DeliveryDate}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="BookId" Binding="{Binding BookId}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="AdminId" Binding="{Binding AdminId, Converter={StaticResource adminIdConverter}}" Width="*" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2">
+            <Button  Width="150" Content="Заказ доставлен" Margin="10" Click="Button_Click"/>
+            <Button Width="150" Content="Принять заказ" Click="ButtonAdminAdd_Click" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (OS07_01.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  OS06_01.cpp
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(25,2): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(28,3): error C2065: lock: необъявленный идентификатор
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(28,8): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "bts"
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(28,8): error C2065: bts: необъявленный идентификатор
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(28,12): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "check"
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(29,3): error C2065: jc: необъявленный идентификатор
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(29,6): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "CriticalSection"
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(29,6): error C2065: CriticalSection: необъявленный идентификатор
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(30,2): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(38,2): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(38,7): error C2065: lock: необъявленный идентификатор
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(38,12): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "btr"
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(38,12): error C2065: btr: необъявленный идентификатор
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(38,16): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "check"
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(39,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(54,10): warning C4477: "printf": в строке форматирования "%s" требуется аргумент типа "char *", но вариативный аргумент "4" имеет тип "int"
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(54,10): warning C4313: printf: конфликт "%s" в строке формата с аргументом 4 типа "int"
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(54,78): warning C4474: "printf" : для строки формата передано слишком много аргументов
+C:\Education\3 kurs 1 sem\OS\lab 6\OS_Lab6\OS07_01\OS06_01.cpp(54,78): message : заполнители и их параметры ожидают переменное число аргументов в количестве 4, но было предоставлено 5

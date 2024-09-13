@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Education\\3 kurs 1 sem\\Project\\Клочко Основа\\WPF_ProjectV3\\WPF_Project\\WPF_Project.csproj": {}
+  },
+  "projects": {
+    "C:\\Education\\3 kurs 1 sem\\Project\\Клочко Основа\\WPF_ProjectV3\\WPF_Project\\WPF_Project.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Education\\3 kurs 1 sem\\Project\\Клочко Основа\\WPF_ProjectV3\\WPF_Project\\WPF_Project.csproj",
+        "projectName": "WPF_Project",
+        "projectPath": "C:\\Education\\3 kurs 1 sem\\Project\\Клочко Основа\\WPF_ProjectV3\\WPF_Project\\WPF_Project.csproj",
+        "packagesPath": "C:\\Users\\blakm\\.nuget\\packages\\",
+        "outputPath": "C:\\Education\\3 kurs 1 sem\\Project\\Клочко Основа\\WPF_ProjectV3\\WPF_Project\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\blakm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[5.0.0-ci455, )"
+            },
+            "ModernWpfUI": {
+              "target": "Package",
+              "version": "[0.9.7-preview.2, )"
+            },
+            "MvvmLight": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[23.3.0-dev, )"
+            },
+            "Syncfusion.Licensing": {
+              "target": "Package",
+              "version": "[23.2.6, )"
+            },
+            "Syncfusion.SfSkinManager.WPF": {
+              "target": "Package",
+              "version": "[23.2.6, )"
+            },
+            "Syncfusion.Themes.Windows11Light.WPF": {
+              "target": "Package",
+              "version": "[23.2.6, )"
+            },
+            "WPF-UI": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

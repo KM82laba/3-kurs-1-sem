@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Main_Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="h_letter_letters_alphabet_icon_208995.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Main_Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.0.0-ci455" />
+    <PackageReference Include="ModernWpfUI" Version="0.9.7-preview.2" />
+    <PackageReference Include="MvvmLight" Version="5.4.1.1" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.3.0-dev" />
+    <PackageReference Include="Syncfusion.Licensing" Version="23.2.6" />
+    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="23.2.6" />
+    <PackageReference Include="Syncfusion.Themes.Windows11Light.WPF" Version="23.2.6" />
+    <PackageReference Include="WPF-UI" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+
+</Project>

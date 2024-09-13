@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPF_Project.ChooseAdminWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Project"
+        mc:Ignorable="d"
+        Title="ChooseAdminWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        >
+    
+    <Grid >
+        <Button Grid.Column="0" Grid.ColumnSpan="1" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="0" Click="btnOut_Click">
+                <Grid Margin="5">
+                    <ContentControl Width="20" Height="20">
+                        <materialDesign:PackIcon Kind="ArrowBack" VerticalAlignment="Center" HorizontalAlignment="Center" Width="30" Height="30"/>
+                    </ContentControl>
+                </Grid>
+        </Button>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock FontSize="20" Text="Панель администратора" FontWeight="Medium"/>
+            <Button Width="150" Margin="35 10 0 10" Content="Книги" FontSize="15" Click="ButtonBooks_Click" />
+            <Button Width="150" Margin="35 10 0 10" Content="Издатели" FontSize="15" Click="ButtonPublishers_Click" />
+            <Button Width="150" Margin="35 10 0 10" Content="Авторы" FontSize="15" Click="ButtonAutors_Click" />
+            <Button Width="150" Margin="35 10 0 10" Content="Категории" FontSize="15" Click="ButtonCategories_Click" />
+            <Button Width="150" Margin="35 10 0 10" Content="Заказы" FontSize="15" Click="ButtonOrders_Click" />
+            
+        </StackPanel>
+    </Grid>
+
+</Window>

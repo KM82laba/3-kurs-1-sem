@@ -1,0 +1,94 @@
+<mxfile host="Electron" modified="2023-12-07T14:44:34.286Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="CK5N7T9h4Uw3RdVFbUh2" version="22.1.2" type="device">
+  <diagram name="Страница — 1" id="X9WvnjXzEnPtWTMCnomZ">
+    <mxGraphModel dx="2076" dy="239" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-1" value="&lt;i style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Class&amp;gt;&amp;gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;AddProductDatacontext&lt;/span&gt;&lt;br&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1200" width="435" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-2" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ PublishersViewModel: PublishersViewModel&lt;br&gt;+ AuthorsViewModel: AuthorsViewModel&lt;br&gt;+ CategoryViewModel: CategoryViewModel&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-1">
+          <mxGeometry y="48" width="435" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-1">
+          <mxGeometry y="120" width="435" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-4" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ AddProductDatacontext()&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-1">
+          <mxGeometry y="128" width="435" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-5" value="&lt;i style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Class&amp;gt;&amp;gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;AddProductWindow&lt;/span&gt;&lt;br&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1390" width="560" height="328" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-6" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ _viewModel: BooksViewModel&lt;br&gt;+ _repository: BooksRepository&lt;br&gt;+ _viewModelpublishers: PublishersViewModel&lt;br&gt;+ _viewModelauthors: AuthorsViewModel&lt;br&gt;+ _viewModelcategory: CategoryViewModel&lt;br&gt;+ bookContentBytes: byte[]&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-5">
+          <mxGeometry y="48" width="560" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-5">
+          <mxGeometry y="160" width="560" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-8" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ AddProductWindow()&lt;br&gt;+ priceTextBox_PreviewTextInput(sender: object, e: TextCompositionEventArgs)&lt;br&gt;+ cancelButton_Click(sender: object, e: RoutedEventArgs)&lt;br&gt;+ AddBookButton_Click(sender: object, e: RoutedEventArgs)&lt;br&gt;+ TestDialog&lt;br&gt;+ OnApplyTemplate()&lt;br&gt;+ selectImageButton(sender: object, e: RoutedEventArgs)&lt;br&gt;+ selectIContentButton(sender: object, e: RoutedEventArgs)&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-5">
+          <mxGeometry y="168" width="560" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-9" value="&lt;i style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Class&amp;gt;&amp;gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;AddProductWindow&lt;/span&gt;&lt;br&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1740" width="560" height="328" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-10" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ _viewModel: BooksViewModel&lt;br&gt;+ _repository: BooksRepository&lt;br&gt;+ _viewModelpublishers: PublishersViewModel&lt;br&gt;+ _viewModelauthors: AuthorsViewModel&lt;br&gt;+ _viewModelcategory: CategoryViewModel&lt;br&gt;+ bookContentBytes: byte[]&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-9">
+          <mxGeometry y="48" width="560" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-9">
+          <mxGeometry y="160" width="560" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-12" value="&lt;pre&gt;&lt;code class=&quot;!whitespace-pre hljs language-plaintext&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ AddProductWindow()&lt;br&gt;+ priceTextBox_PreviewTextInput(sender: object, e: TextCompositionEventArgs)&lt;br&gt;+ cancelButton_Click(sender: object, e: RoutedEventArgs)&lt;br&gt;+ AddBookButton_Click(sender: object, e: RoutedEventArgs)&lt;br&gt;+ TestDialog&lt;br&gt;+ OnApplyTemplate()&lt;br&gt;+ selectImageButton(sender: object, e: RoutedEventArgs)&lt;br&gt;+ selectIContentButton(sender: object, e: RoutedEventArgs)&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-9">
+          <mxGeometry y="168" width="560" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-13" value="&lt;i style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Class&amp;gt;&amp;gt;&lt;br&gt;&lt;span style=&quot;font-style: normal; text-align: left; background-color: initial;&quot;&gt;AdminIdConverter&lt;/span&gt;&lt;br&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1694" width="520" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-14" value="&lt;pre&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ Convert(value: object, targetType: Type, parameter: object, culture: CultureInfo): object&lt;br&gt;+ ConvertBack(value: object, targetType: Type, parameter: object, culture: CultureInfo): object&lt;/font&gt;&lt;br&gt;&lt;/pre&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-13">
+          <mxGeometry y="48" width="520" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-13">
+          <mxGeometry y="120" width="520" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-17" value="&lt;i style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Class&amp;gt;&amp;gt;&lt;br&gt;&lt;span style=&quot;font-style: normal; text-align: left; background-color: initial;&quot;&gt;AdminIdConverterClient&lt;/span&gt;&lt;br&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1844" width="520" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-18" value="&lt;pre&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ Convert(value: object, targetType: Type, parameter: object, culture: CultureInfo): object&lt;br/&gt;+ ConvertBack(value: object, targetType: Type, parameter: object, culture: CultureInfo): object&lt;/font&gt;&lt;br/&gt;&lt;/pre&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-17">
+          <mxGeometry y="48" width="520" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-17">
+          <mxGeometry y="120" width="520" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-20" value="&lt;i style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Class&amp;gt;&amp;gt;&lt;br&gt;&lt;span style=&quot;font-style: normal; text-align: left; background-color: initial;&quot;&gt;AuthorsRepository&lt;/span&gt;&lt;br&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1390" width="270" height="268" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-21" value="&lt;pre&gt;&lt;font face=&quot;Helvetica&quot;&gt;- _connectionString: string&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-20">
+          <mxGeometry y="48" width="270" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-20">
+          <mxGeometry y="100" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-23" value="&lt;pre&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ AuthorsRepository(connectionString: string)&lt;br/&gt;+ GetAllAuthors(): DataTable&lt;br/&gt;+ GetAuthorsForBook(bookId: int): List&amp;lt;Author&amp;gt;&lt;br/&gt;+ AddAuthor(author: Author)&lt;br/&gt;+ GetNextAuthorId(): int&lt;br/&gt;+ UpdateAuthor(author: Author): bool&lt;br/&gt;+ DeleteAuthor(author: Author)&lt;/font&gt;&lt;br/&gt;&lt;/pre&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-20">
+          <mxGeometry y="108" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-24" value="&lt;i style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Class&amp;gt;&amp;gt;&lt;br&gt;&lt;span style=&quot;font-style: normal; text-align: left; background-color: initial;&quot;&gt;AuthorsViewModel&lt;/span&gt;&lt;br&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="1310" width="350" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-25" value="&lt;pre&gt;&lt;font face=&quot;Helvetica&quot;&gt;- authors: ObservableCollection&amp;lt;Author&amp;gt;&lt;br&gt;- _repository: AuthorsRepository&lt;br&gt;- connectionString: string&lt;/font&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-24">
+          <mxGeometry y="48" width="350" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-24">
+          <mxGeometry y="120" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-27" value="&lt;pre&gt;&lt;font face=&quot;Helvetica&quot;&gt;+ Authors&lt;br&gt;+ IsSelected&lt;br&gt;+ AuthorsViewModel()&lt;br&gt;+ LoadAuthors()&lt;br&gt;+ AuthorsViewModel(bookId: int)&lt;br&gt;+ LoadAuthorsForBook(bookId: int)&lt;br&gt;+ AddAuthor(author: Author)&lt;br&gt;+ UpdateAuthor(author: Author)&lt;br&gt;+ DeleteAuthor(author: Author)&lt;br&gt;+ OnPropertyChanged(propertyName: string)&lt;br&gt;+ PropertyChanged&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-24">
+          <mxGeometry y="128" width="350" height="192" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-28" value="&lt;i style=&quot;border-color: var(--border-color); font-weight: 400;&quot;&gt;&amp;lt;&amp;lt;Class&amp;gt;&amp;gt;&lt;br&gt;&lt;span style=&quot;font-style: normal; text-align: left; background-color: initial;&quot;&gt;Author&lt;/span&gt;&lt;br&gt;&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1390" width="270" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="uvAbV5_4unUO5M7TxqBl-29" value="&lt;pre&gt;&lt;font face=&quot;Helvetica&quot;&gt;- isSelectedForBook: bool&lt;br&gt;&lt;br&gt;+ AuthorId&lt;br&gt;+ AuthorName&lt;br&gt;+ IsSelected&lt;br&gt;+ OnPropertyChanged(propertyName: string)&lt;br&gt;+ PropertyChanged&lt;/font&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="uvAbV5_4unUO5M7TxqBl-28">
+          <mxGeometry y="48" width="270" height="132" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

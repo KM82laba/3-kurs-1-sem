@@ -1,0 +1,20 @@
+﻿WPF_Project
+
+
+winexe
+C#
+.cs
+C:\Education\3 kurs 1 sem\Project\WPF_ProjectV3\WPF_ProjectV3\WPF_Project\obj\Release\net6.0-windows\win-x86\
+WPF_Project
+none
+false
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+C:\Education\3 kurs 1 sem\Project\WPF_ProjectV3\WPF_ProjectV3\WPF_Project\App.xaml
+181137504124
+1577352581
+41-485653727
+211-882978565
+AddProductWindow.xaml;AuthorsWindow.xaml;BookReader.xaml;BookWindow.xaml;CategoriesWindow.xaml;ChooseAdminWindow.xaml;ClientWindow.xaml;CustomTextBox.xaml;LoginWindow.xaml;OrdersAdminWindow.xaml;OrdersClientWindow.xaml;ProductDetailsWindow.xaml;ProductEditWindow.xaml;PublishersWindow.xaml;Rating.xaml;RegisterWindow.xaml;UserBooksWindow.xaml;UserInfo.xaml;
+
+False
+

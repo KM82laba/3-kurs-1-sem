@@ -1,0 +1,102 @@
+﻿<Window x:Class="WPF_Project.BookWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Project"
+        xmlns:uiw="http://schemas.lepo.co/wpfui/2022/xaml"
+        mc:Ignorable="d"
+        Title="Bookmarket" Height="700" Width="930"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Window.Resources>
+
+    </Window.Resources>
+    <Grid Width="auto" Height="auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        
+        <Button Grid.ColumnSpan="1" HorizontalAlignment="Left" BorderThickness="0" Click="btnAddProduct_Click" Margin="77,0,0,0">
+            <Grid Margin="10,10,10,10">
+                <ContentControl Width="50" Height="50">
+                    <materialDesign:PackIcon Kind="Plus" VerticalAlignment="Center" HorizontalAlignment="Center" Width="30" Height="30"/>
+                </ContentControl>
+            </Grid>
+        </Button>
+        <Button Grid.ColumnSpan="1" HorizontalAlignment="Left" BorderThickness="0" Click="btnOut_Click">
+            <Grid Margin="10,10,10,10">
+
+                <ContentControl Width="50" Height="50">
+                    <materialDesign:PackIcon Kind="ArrowBack" VerticalAlignment="Center" HorizontalAlignment="Center" Width="30" Height="30"/>
+                </ContentControl>
+            </Grid>
+        </Button>
+        <Button x:Name="btnRefrechListOfProduct" HorizontalAlignment="Left" BorderThickness="0" Click="btnRefrechListOfProduct_Click" Margin="154,0,0,0" >
+            <Grid Margin="10,10,10,10">
+                <ContentControl Width="50" Height="50">
+                    <materialDesign:PackIcon Kind="Refresh" VerticalAlignment="Center" HorizontalAlignment="Center" Width="30" Height="30"/>
+                </ContentControl>
+            </Grid>
+        </Button>
+
+        <Button BorderThickness="0" Click="btnDelete_Click" Command="{Binding DeleteProductCommand}" CommandParameter="{Binding SelectedProduct}" Margin="246,0,0,0">
+            <Grid Margin="10,10,10,10">
+
+                <ContentControl Width="50" Height="50">
+                    <materialDesign:PackIcon Kind="Trash" VerticalAlignment="Center" HorizontalAlignment="Center" Width="30" Height="30" />
+                </ContentControl>
+            </Grid>
+        </Button>
+        <Button BorderThickness="0" Click="btnEdit_Click" Margin="343,0,0,0">
+            <Grid Margin="10,10,10,10">
+
+                <ContentControl Width="50" Height="50">
+                    <materialDesign:PackIcon Kind="DatabaseEdit" VerticalAlignment="Center" HorizontalAlignment="Center" Width="30" Height="30"/>
+                </ContentControl>
+            </Grid>
+        </Button>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Margin="10">
+            <TextBox x:Name="searchBox" Width="300" />
+            <Button x:Name="SearchButton" Width="25" Height="25" Click="SearchButton_Click" BorderThickness="0" Grid.Column="1" Grid.Row="1" Background="White" Margin="10 0 0 0" Style="{Binding}">
+                <Grid>
+                    <ContentControl Width="25" Height="25">
+                        <materialDesign:PackIcon Kind="Search" VerticalAlignment="Center" HorizontalAlignment="Center" Width="30" Height="30"/>
+                    </ContentControl>
+                </Grid>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+            <uiw:Button x:Name="SortTitleButton" Click="SortButtonTitle_Click" Content="Название" FontSize="16" Icon="ArrowSortDown16" Margin="10"/>
+            <uiw:Button x:Name="SortPriceButton" Click="SortButtonPrice_Click" Content="Цена" FontSize="16" Icon="ArrowSortDown16" Margin="10"/>
+        </StackPanel>
+
+        <ListBox BorderThickness="0" x:Name="productsList" ItemsSource="{Binding Books}" SelectionMode="Single" d:ItemsSource="{d:SampleData ItemCount=10}" Grid.Row="3" Grid.Column="1" MouseDoubleClick="ProductsList_MouseDoubleClick">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="4"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <ui:ThemeShadowChrome Depth="20" IsShadowEnabled="True" Height="300">
+                        <StackPanel Width="200" Background="White" >
+                            <Image Source="{Binding CoverImage}" Height="150" Width="150" Margin="5"/>
+                            <TextBlock Text="{Binding Title}" Foreground="Black" FontWeight="Bold" FontSize="16" Margin="5"/>
+                            <TextBlock Text="{Binding YearPublished, StringFormat='{}Год издания: {0:yyyy}'}" Foreground="Black" Margin="5"/>
+                            <TextBlock Text="{Binding Price, StringFormat='{}{0:N2} BYN'}" Foreground="Black" Margin="5"/>
+                            <TextBlock Text="{Binding Description}" Foreground="Black" Margin="5"/>
+                        </StackPanel>
+                    </ui:ThemeShadowChrome>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </Grid>
+</Window>

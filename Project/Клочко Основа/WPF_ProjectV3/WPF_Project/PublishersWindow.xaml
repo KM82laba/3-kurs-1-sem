@@ -1,0 +1,48 @@
+﻿<Window x:Class="WPF_Project.PublishersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Project"
+        mc:Ignorable="d"
+        Title="PublishersWindow" Height="600" Width="450"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+       
+        <StackPanel>
+            <Button Grid.Column="0" Grid.ColumnSpan="1" HorizontalAlignment="Left" BorderThickness="0" Click="btnBackToChooseAdminWindow_Click">
+                <Grid Margin="10,10,10,10">
+
+                    <ContentControl Width="20" Height="20">
+                        <materialDesign:PackIcon Kind="ArrowBack" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </ContentControl>
+                </Grid>
+            </Button>
+            <TextBlock Text="Новый издатель" FontWeight="Bold" FontSize="16" Margin="0 0 0 10" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10" HorizontalAlignment="Center">
+                <TextBlock Text="Имя издателя" Margin="0 5 10 0"/>
+                <TextBox x:Name="newPublisherNameTextBox" Width="150"/>
+            </StackPanel>
+            <Button Content="Добавить издателя" Click="AddPublisherButton_Click" Width="150" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Издатели" FontWeight="Bold" FontSize="16" Margin="0 20 0 10"/>
+            <DataGrid x:Name="dataGrid" ItemsSource="{Binding Publishers}" Height="200" AutoGenerateColumns="False" Background="White" BorderBrush="White">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding PublisherId}" Width="Auto" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Name" Binding="{Binding PublisherName}" Width="*" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 10" HorizontalAlignment="Center">
+                    <TextBlock Text="Изменить имя издателя" Margin="0 5 10 0"/>
+                <TextBox x:Name="EditPublisherNameTextBox" Width="150" />
+            </StackPanel>
+            <Button Content="Изменить издателя" Click="EditPublisherButton_Click" Width="150" HorizontalAlignment="Center" />
+            <Button Content="Удалить издателя" Click="DeletePublisherButton_Click" Margin="0 10 0 0" Width="150" HorizontalAlignment="Center" />
+                
+            
+            
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF_Project.UserBooksWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Project"
+        mc:Ignorable="d"
+        Title="UserBooksWindow" Height="450" Width="300"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <DataGrid ItemsSource="{Binding Books}" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Книга" Binding="{Binding BookName}" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Статус книги" Binding="{Binding Status}" Width="*" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

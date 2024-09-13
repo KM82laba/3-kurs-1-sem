@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPF_Project.OrdersClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Project"
+        mc:Ignorable="d"
+        Title="OrdersClientWindow" Height="450" Width="700"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Window.Resources>
+        <local:AdminIdConverterClient x:Key="adminIdConverter"/>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <DataGrid x:Name="dataGrid" ItemsSource="{Binding Orders}" Height="350" AutoGenerateColumns="False"   CanUserAddRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Книга" Binding="{Binding BookTitle}" Width="*" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Дата заказа" Binding="{Binding OrderDate}" Width="*" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Дата доставки" Binding="{Binding DeliveryDate}" Width="*" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Количество" Binding="{Binding Quantity}" Width="*" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Цена книги" Binding="{Binding Price}" Width="*" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Состояние заказа" Binding="{Binding AdminId, Converter={StaticResource adminIdConverter}}" Width="*" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Width="150" Height="30" Content="Отменить заказ" Click="Button_Click" Margin="10" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+    
+</Window>

@@ -1,0 +1,27 @@
+﻿Build started 04.10.2021 19:53:18.
+Logging verbosity is set to: Normal.     1>Project "C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\OS03_01\OS03_02xxx\OS03_02xxx.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (OS03_02xxx.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+         Creating directory "Debug\OS03_02_1.tlog\".
+     1>InitializeBuildStatus:
+         Creating "Debug\OS03_02_1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt OS03_02_1.cpp
+         OS03_02_1.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\OS03_01\Debug\OS03_02_1.exe" /INCREMENTAL /ILK:"Debug\OS03_02_1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\OS03_01\Debug\OS03_02_1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\OS03_01\Debug\OS03_02_1.lib" /MACHINE:X86 Debug\OS03_02_1.obj
+         OS03_02xxx.vcxproj -> C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\OS03_01\Debug\OS03_02_1.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\OS03_02_1.tlog\unsuccessfulbuild".
+         Touching "Debug\OS03_02_1.tlog\OS03_02_1.lastbuildstate".
+     1>Done Building Project "C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\OS03_01\OS03_02xxx\OS03_02xxx.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+       "C:\Users\User\Documents\ОСиСП\OperationSystems_5sem\OS03_01\OS03_02xxx\OS03_02xxx.vcxproj" (Rebuild target) (1) ->
+       (PrepareForBuild target) -> 
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (OS03_02xxx.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.24

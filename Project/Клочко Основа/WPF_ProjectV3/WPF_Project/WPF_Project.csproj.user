@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Education\3 kurs 1 sem\Project\WPF_ProjectV3\WPF_ProjectV3\WPF_Project\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddProductWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AuthorsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BookReader.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CategoriesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ChooseAdminWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ClientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomTextBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrdersAdminWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrdersClientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProductDetailsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProductEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PublishersWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Rating.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RegisterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserBooksWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddProductWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AuthorsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BookReader.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CategoriesWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ChooseAdminWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ClientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BookWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomTextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OrdersAdminWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OrdersClientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProductDetailsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProductEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PublishersWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Rating.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RegisterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserBooksWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

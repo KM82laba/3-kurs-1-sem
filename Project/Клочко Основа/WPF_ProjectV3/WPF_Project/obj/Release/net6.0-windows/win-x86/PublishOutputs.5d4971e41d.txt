@@ -1,0 +1,3 @@
+C:\Users\blakm\Desktop\Новая папка\WPF_Project.pdb
+C:\Users\blakm\Desktop\Новая папка\WPF_Project.dll.config
+C:\Users\blakm\Desktop\Новая папка\WPF_Project.exe

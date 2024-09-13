@@ -1,0 +1,20 @@
+﻿WPF_Project
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Education\3 kurs 1 sem\Project\WPF_ProjectV3\WPF_Project\obj\Debug\net6.0-windows\
+WPF_Project
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+C:\Education\3 kurs 1 sem\Project\WPF_ProjectV3\WPF_Project\App.xaml
+18662314970
+1577352581
+43-1797151354
+2161423418781
+Custom\CustomTextBox.xaml;Custom\Rating.xaml;View\AddProductWindow.xaml;View\AuthorsWindow.xaml;View\BookReader.xaml;View\BookWindow.xaml;View\CategoriesWindow.xaml;View\ChooseAdminWindow.xaml;View\ClientWindow.xaml;View\LoginWindow.xaml;View\OrdersAdminWindow.xaml;View\OrdersClientWindow.xaml;View\ProductDetailsWindow.xaml;View\ProductEditWindow.xaml;View\PublishersWindow.xaml;View\RegisterWindow.xaml;View\UserBooksWindow.xaml;View\UserInfo.xaml;
+
+False
+
